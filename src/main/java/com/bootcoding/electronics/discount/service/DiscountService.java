@@ -2,10 +2,7 @@ package com.bootcoding.electronics.discount.service;
 
 import com.bootcoding.electronics.discount.model.Customer;
 import com.bootcoding.electronics.discount.model.ProductDiscount;
-import com.bootcoding.electronics.discount.utils.DiscountCalculator;
-import com.bootcoding.electronics.discount.utils.DiscountValidityGenerator;
-import com.bootcoding.electronics.discount.utils.NameGenerator;
-import com.bootcoding.electronics.discount.utils.RandomDateGenerator;
+import com.bootcoding.electronics.discount.utils.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,12 +28,13 @@ public class DiscountService
         return productDiscounts;
     }
 
-    private ProductDiscount calculateProductDiscount(Customer customer) {
+    private ProductDiscount calculateProductDiscount(Customer customer)
+    {
         ProductDiscount productDiscount = new ProductDiscount();
         productDiscount.setName(NameGenerator.getName());
         productDiscount.setValidity(DiscountValidityGenerator.getValidity(RandomDateGenerator.getRandomDate()));
         productDiscount.setDiscount(DiscountCalculator.getDiscount(customer));
+        productDiscount.setRemainingdays(RemainingDaysCalculator.getRemainingDays(productDiscount.getValidity()));
         return productDiscount;
     }
-
 }
