@@ -9,13 +9,11 @@ public class ProductDiscount {
     public  String name;
     public int discount;
     public Date validity;
-
-
+    public long remainingdays;
 
     public String getName() {
         return name;
     }
-
 
     public void setName(String name) {
         this.name = name;
@@ -35,5 +33,13 @@ public class ProductDiscount {
 
     public void setValidity(Date validity) {
         this.validity = validity;
+    }
+
+    public long getRemainingdays() {
+        return remainingdays;
+    }
+
+    public void setRemainingdays(long remainingdays) {
+        this.remainingdays = remainingdays;
     }
 }
