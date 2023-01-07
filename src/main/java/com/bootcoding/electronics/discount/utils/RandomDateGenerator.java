@@ -12,8 +12,7 @@ public class RandomDateGenerator
         return date;
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         RandomDateGenerator.getRandomDate();
     }
 }

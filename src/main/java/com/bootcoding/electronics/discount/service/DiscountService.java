@@ -31,8 +31,7 @@ public class DiscountService
         return productDiscounts;
     }
 
-    private ProductDiscount calculateProductDiscount(Customer customer)
-    {
+    private ProductDiscount calculateProductDiscount(Customer customer) {
         ProductDiscount productDiscount = new ProductDiscount();
         productDiscount.setName(NameGenerator.getName());
         productDiscount.setValidity(DiscountValidityGenerator.getValidity(RandomDateGenerator.getRandomDate()));

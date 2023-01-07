@@ -14,6 +14,7 @@ public class DiscountController
     @Autowired
     DiscountService discountService;
 
+
     @GetMapping("/customer/discount")
     public List<ProductDiscount> getAllCustomersDiscount()
     {

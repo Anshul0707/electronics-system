@@ -4,8 +4,7 @@ import com.bootcoding.electronics.discount.model.Customer;
 public class DiscountCalculator
 {
     private static final int MIN_count=100;
-    public static int getDiscount(Customer customer)
-    {
+    public static int getDiscount(Customer customer) {
         int orderCount = customer.getOrderCount();
         int visitCount = customer.getVisitCount();
         int discount =calcDiscount(orderCount,visitCount);

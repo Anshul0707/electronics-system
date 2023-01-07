@@ -13,7 +13,8 @@ public class ProductGenerator
         return product[randomIndex];
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         ProductGenerator.getProduct();
     }
 }

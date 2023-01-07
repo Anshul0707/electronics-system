@@ -12,8 +12,7 @@ public class CustomerService
 {
     private static final int MAX_LIMIT=13;
 
-    public List<Customer> getAllCustomer()
-    {
+    public List<Customer> getAllCustomer() {
         List<Customer> customers=new ArrayList<>();
         for (int i=0; i<MAX_LIMIT;i++)
         {

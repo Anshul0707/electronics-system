@@ -12,51 +12,63 @@ public class Customer
     public int orderCount;
     public int visitCount;
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 
-    public String getProduct() {
+    public String getProduct()
+    {
         return product;
     }
 
-    public void setProduct(String product) {
+    public void setProduct(String product)
+    {
         this.product = product;
     }
 
-    public int getPrice() {
+    public int getPrice()
+    {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(int price)
+    {
         this.price = price;
     }
 
-    public long getPhone() {
+    public long getPhone()
+    {
         return phone;
     }
 
-    public void setPhone(long phone) {
+    public void setPhone(long phone)
+    {
         this.phone = phone;
     }
 
-    public int getOrderCount() {
+    public int getOrderCount()
+    {
         return orderCount;
     }
 
-    public void setOrderCount(int orderCount) {
+    public void setOrderCount(int orderCount)
+    {
         this.orderCount = orderCount;
     }
 
-    public int getVisitCount() {
+    public int getVisitCount()
+    {
         return visitCount;
     }
 
-    public void setVisitCount(int visitCount) {
+    public void setVisitCount(int visitCount)
+    {
         this.visitCount = visitCount;
     }
 }

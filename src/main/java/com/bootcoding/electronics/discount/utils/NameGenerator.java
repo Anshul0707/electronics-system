@@ -16,7 +16,8 @@ public class NameGenerator
         return names[randomIndex];
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         NameGenerator.getName();
     }
 }

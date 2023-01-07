@@ -13,7 +13,8 @@ public class PriceGenerator
         return price[randomIndex];
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         PriceGenerator.getPrice();
     }
 }
